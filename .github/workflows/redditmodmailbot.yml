@@ -1,0 +1,32 @@
+name: Reddit Modmail Bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setting up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Create ENV file and run redditmodmailbot
+        env:
+          REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
+          REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
+          API_SECRET: ${{ secrets.API_SECRET }}
+          API_CLIENT: ${{ secrets.API_CLIENT }}
+          DISCORD_URL: ${{ secrets.DISCORD_URL }}
+        run: |
+          pip install -r requirements.txt
+          python redditmodmailbot.py
