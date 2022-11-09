@@ -1,5 +1,7 @@
 # Reddit Modmail Bot
 
+![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white) ![Open-Source](https://img.shields.io/badge/Open%20Source%20Initiative-3DA639.svg?style=for-the-badge&logo=Open-Source-Initiative&logoColor=white)
+
 This is a Reddit bot that helps in making Reddit moderation easier.
 
 Here's how the Reddit Modmail Bot functions:
@@ -33,6 +35,9 @@ Here are some of the points of improvements that can be implemented:
 
 This is an open-source project. We invite your participation through issues and pull requests! Please ensure that you follow the [contributing guidelines](CONTRIBUTING.md). Also, do go through out [code of conduct](CODE_OF_CONDUCT.md) guidelines for contributors.
 
+## List of Contributors
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=rajtilakjee/redditmodmailbot)
 
 ## Additional Notes
 
