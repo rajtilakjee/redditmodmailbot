@@ -6,7 +6,7 @@ This is a Reddit bot that helps in making Reddit moderation easier.
 
 Here's how the Reddit Modmail Bot functions:
 
- - The `redditmodmail.py` file is executed
+ - The `redditmodmailbot.py` file is executed
  - The bot starts running in an infinite loop
  - It waits and listen to a designated sub Modmail queue
  - The said Modmail queue received a new message
